@@ -1,23 +1,23 @@
+21 sloc)  286 Bytes
 #include <stdio.h>
 
 /**
- * main - main block
- * Description: prints all the numbers of base 16 in lowercase,
- * followed by a new line
+ * main - Prints numbers between 0 to 9 with commas and spaces.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
-	char ch;
+	int i;
 
-	for (n = 48; n < 58; n++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(n);
-	}
-	for (ch = 'a'; ch <= 'f'; ch++)
-	{
-		putchar(ch);
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
